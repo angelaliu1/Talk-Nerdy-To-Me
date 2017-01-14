@@ -3,9 +3,42 @@
 
 <head>
 	<title>Talk Nerdy To Me</title>
+	<script
+	  src="http://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<h1>Talk Nerdy To Me</h1>
 	<h3>An intellectual pick-up line generator</h3>
+	<input id="inputBox">
+	<button onclick="clickHandler()"></button>
+	<span id="output"></span>
 </body>
+
+<script>
+var chemistryKeyword = "chemistry";
+var chemistryLines = [
+'I wish I was an Ion so I could form an exothermic bond with you.',
+'Are you made of copper? Cause I Cu in a relationship with me.', 
+'Do you have 11 protons? \'Cause you\'re Sodium fine!'
+];
+
+function clickHandler() {
+	var inputTxt = $( "#inputBox" ).val();
+	var position = inputTxt.indexOf(chemistryKeyword)
+	var output = '';
+	if (position > -1) {
+		var indexPos = Math.floor(Math.random()*chemistryLines.length);
+		output = chemistryLines[indexPos];
+	} else {
+		output = "unrecognized keyword";
+	}
+
+	$( "#output" ).text(output);
+}
+</script>
+
+
+</html>
