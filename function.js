@@ -28,10 +28,10 @@ var lines = ['I wish I was an Ion so I could form an exothermic bond with you.',
 "You\'ve got more curves than a triple integral.",
 "What\'s your sine? It must be pi/2 because you\'re the 1.",
 "Our love is like dividing by zero... you cannot define it.", "I think therefore I am your valentine.",
-"Are you bourgeois, because I feel an uprising in my heart.",
-"Here\'s my number; don\'t be a Stranger. (Camus)",
+"Are you proletariat, because I feel an uprising in my heart.",
+"Here\'s my number; don\'t be a Stranger.",
 "Come to my place and we\'ll maximize the greatest amount of pleasure for the greatest number of people.",
-"I Kant suppress my love for you.", "I\'m no Thomas Paine, but you and I are Common Sense.",
+"I Kant suppress my love for you.", "I\'m no Thomas Paine, but you and I aremmon Sense.",
 "There\'s a reason they say I started the Era of Good Feelings...",
 "Did you invent the airplane?, cause you seem Wright to me.",
 "Leon Trotsky thinks you\'re hotsky.",
@@ -44,7 +44,17 @@ var lines = ['I wish I was an Ion so I could form an exothermic bond with you.',
 "Does your left eye hurt? Because you've been looking right all day.",
 "Did you read Dr.Seuss as a kid? Because green eggs and damnnn!",
 "There is something wrong with my phone. It doesn\'t have your number in it.",
-"I like Legos, you like Legos, why don\'t we build a relationship?"];
+"I like Legos, you like Legos, why don\'t we build a relationship?",
+"Are you chapstick because you\'re da balm.",
+"If you were a disease you\'d be hepatitis bae.",
+"Are you a cat because I\'m feline a connection between us.",
+"Your hand looks heavy. Let me hold it for you.",
+"Even if there wasn\'t any gravity on earth, I would still fall for you!",
+"Are you vaporizing from a solid state? Because you are sublime.",
+"You must be the square root of two 'cause I feel irrational around you.",
+"Is your name Waldo? Because someone like you is hard to find.",
+"You must be a banana because I find you a-peeling.",
+"Do you know any good bakeries around? Because I\’d love to have a cutie pie like you."];
 
 /*global $*/
 /*global linear*/
@@ -77,9 +87,9 @@ function clickHandler() {
 
 function randomLoad()
 {
-    var rand = new Array('1sodium.html','1bedspring.html','1driving.html','1google.html','1sun.html','1typing.html','1vacuum.html','1wright.html', '1lego.html','1number.html', '1commonsense.html','1cavity.html', '1cat.html', '1jim.html', '1tangent.html',
-    '1firefox.html');
-    var mynum = Math.floor(Math.random() * 16);
+    var rand = new Array('1sodium.html','1bedspring.html','1driving.html','1google.html','1sun.html','1typing.html','1vacuum.html','1wright.html', '1lego.html','1number.html', '1commonsense.html','1cavity.html', '1cat.html','1jim.html', '1tangent.html',
+    '1firefox.html', '1think.html', '1leap.html', '1stranger.html', '1cucumber.html', '1astro.html', '1kiss.html', '1chairman.html');
+    var mynum = Math.floor(Math.random() * 23);
     var location = window.location;
 
     if (location == rand[mynum])
