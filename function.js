@@ -28,10 +28,17 @@ var lines = ['I wish I was an Ion so I could form an exothermic bond with you.',
 "You\'ve got more curves than a triple integral.",
 "What\'s your sine? It must be pi/2 because you\'re the 1.",
 "Our love is like dividing by zero... you cannot define it.", "I think therefore I am your valentine.",
+<<<<<<< HEAD
 "Are you proletariat, because I feel an uprising in my heart.",
 "Here\'s my number; don\'t be a Stranger.",
 "Come to my place and we\'ll maximize the greatest amount of pleasure for the greatest number of people.",
 "I Kant suppress my love for you.", "I\'m no Thomas Paine, but you and I aremmon Sense.",
+=======
+"Are you bourgeois, because I feel an uprising in my heart.",
+"Here\'s my number; don\'t be a Stranger. (Camus)",
+"Come to my place and we\'ll maximize the greatest amount of pleasure for the greatest number of people.",
+"I Kant suppress my love for you.", "I\'m no Thomas Paine, but you and I are Common Sense.",
+>>>>>>> origin/master
 "There\'s a reason they say I started the Era of Good Feelings...",
 "Did you invent the airplane?, cause you seem Wright to me.",
 "Leon Trotsky thinks you\'re hotsky.",
@@ -44,6 +51,7 @@ var lines = ['I wish I was an Ion so I could form an exothermic bond with you.',
 "Does your left eye hurt? Because you've been looking right all day.",
 "Did you read Dr.Seuss as a kid? Because green eggs and damnnn!",
 "There is something wrong with my phone. It doesn\'t have your number in it.",
+<<<<<<< HEAD
 "I like Legos, you like Legos, why don\'t we build a relationship?",
 "Are you chapstick because you\'re da balm.",
 "If you were a disease you\'d be hepatitis bae.",
@@ -55,6 +63,9 @@ var lines = ['I wish I was an Ion so I could form an exothermic bond with you.',
 "Is your name Waldo? Because someone like you is hard to find.",
 "You must be a banana because I find you a-peeling.",
 "Do you know any good bakeries around? Because I\’d love to have a cutie pie like you."];
+=======
+"I like Legos, you like Legos, why don\'t we build a relationship?"];
+>>>>>>> origin/master
 
 /*global $*/
 /*global linear*/
@@ -88,8 +99,13 @@ function clickHandler() {
 function randomLoad()
 {
     var rand = new Array('1sodium.html','1bedspring.html','1driving.html','1google.html','1sun.html','1typing.html','1vacuum.html','1wright.html', '1lego.html','1number.html', '1commonsense.html','1cavity.html', '1cat.html', '1jim.html', '1tangent.html',
+<<<<<<< HEAD
     '1firefox.html', '1think.html', '1leap.html', '1stranger.html', '1cucumber.html', '1astro.html', '1kiss.html', '1chairman.html');
     var mynum = Math.floor(Math.random() * 24);
+=======
+    '1firefox.html');
+    var mynum = Math.floor(Math.random() * 16);
+>>>>>>> origin/master
     var location = window.location;
 
     if (location == rand[mynum])
