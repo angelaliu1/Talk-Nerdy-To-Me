@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Talk Nerdy To Me</title>
+	<script
+	  src="http://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	  
+	<style>
+		body {
+			background-color: #87CEFA;
+			background-image: url("http://maxpixel.freegreatpicture.com/static/photo/1x/Peaceful-Layer-Bliss-Mountain-Layered-Gradient-170971.jpg");
+		}
+		input {
+			padding: 10px;
+			border-radius: 4px;
+		}
+		button {
+			font-size: 15px;
+		}
+		onclick {
+			font-weight: bold;
+			
+		}
+	</style> 
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<center><h1>Talk Nerdy To Me</h1></center>
+	<h3>Hot pickup lines for (questionably) hot people</h3>
+	<input id="inputBox">
+	<button onclick="clickHandler()"; style="width=auto; height=auto; border-color:#ccc">Generate Pickup Line</button> -->
+	<input type="button" onclick="location.href='chem1.html';" value="Generate" />
+	
+	<span id="output"></span>
+</body>
+
+<script>
+var chemistryKey = ["chemistry", "ion", "Chemistry", "Ion", "exothermic", "bond", "element", "atom", "proton", "sodium", "date"];
+var chemistryLines = ['I wish I was an Ion so I could form an exothermic bond with you.',
+'Are you made of copper? Cause I Cu in a relationship with me.', 
+'Do you have 11 protons? \'Cause you\'re Sodium fine!', 'Are you full of Beryllium, Gold, and Titanium, because you are Be-Au-Ti-Ful', 
+'Are you a carbon sample? Because I want to date you.', 'You’re like an exothermic reaction, you spread your hotness everywhere!'];
+
+var physicsKey = ["physics", "friction", "potential", "love", "thermodynamics", "electrons"];
+var physicsLines = ['Like the ideal vacuum, you’re the only thing in my universe.', 'Let’s discover our coefficient in friction.',
+"Let’s discover our coefficient in friction.",
+"I’m attracted to you like the Earth is attracted to the Sun-- with a large force inversely proportional to the distance squared.",
+"Wanna get together and test the spring potential of my mattress?",
+"When our hands touch, I can feel the movement of electrons.",
+"According to the second law of thermodynamics, you’re supposed to share your hotness with me.",
+"Spacetime isn’t the only thing that is curved.",
+"It doesn’t matter if the cat is dead and alive, as long as we are together.",
+"Let me be the neutrino to your antineutrino.",
+"An object in love will remain in love forever."]
+
+var biologyKey = ["biology", "enzyme", "DNA", "system"];
+var biologyLines = ["If I were an enzyme, I'd be DNA helicase so I could unzip your genes.",
+"I wish I were adenine because then I could get paired with U.",
+"DNA spelled backwards is AND, as in... me AND you.",
+"Baby, everytime I see you, my cardiovascular system gets all worked up.",
+"Do you want to touch oral cavities?"];
+
+var csKey = ["computers", "browser", " Google", "laptop", "heart", "keyboard", "WiFi", "files"];
+var csLines = ["You can unzip my files anytime.", 
+"If you were a browser, you'd be called FireFoxy.",
+"This place must have free WiFi, cause I'm feeling a connection.",
+"Who needs Google? You're everything I'm searching for.",
+"Are you a computer keyboard? Because you're my type.",
+"You've stolen the ASCII to my heart.",
+"Girl, you are hotter than the bottom of my laptop."];
+
+var mathKey = ["math", "angle", "trianle", "derivative", "sin", "integral", "zero"];
+var mathLines = ["Are you a 45 degree angle? Because you're acute-y.",
+"If I was sin^2 and you were cos^2 together we would be 1.",
+"You have nicer legs than an Isosceles right triangle.",
+"Me without you is like a nerd without braces, A shoe without laces, aSentenceWithoutSpaces.",
+"Can I be your derivative so I can be tangent to all your curves?",
+"You've got more curves than a triple integral.",
+"What’s your sine? It must be pi/2 because you’re the 1.",
+"Our love is like dividing by zero…. you cannot define it."];
+
+var philosophyKey = "philosophy";
+var philosophyLines = ["I think therefore I am your valentine.",
+"Are you bourgeois, because I feel an uprising in my heart.",
+"Here’s my number; don’t be a Stranger. (Camus)",
+"Come to my place and we’ll maximize the greatest amount of pleasure for the greatest number of people.",
+"I Kant suppress my love for you."];
+
+var historyKey = "history";
+var historyLines = ["I'm no Thomas Paine, but you and I are Common Sense.",
+"There's a reason they say I started the Era of Good Feelings...",
+"Did you invent the airplane?, cause you seem Wright to me.",
+"Leon Trotsky thinks you’re hotsky.",
+"Quit Stalin and be my bae.",
+"You are the most honorable chairman in my heart.",
+"It’s time to fulfill our Manifest Destiny.",
+"You took a Great Leap Forward in my heart."]
+
+var category = []
+
+
+function clickHandler() {
+	var inputTxt = $( "#inputBox" ).val();
+	var position = chemistryKey.indexOf(inputTxt);
+	if (po)
+	var output = '';
+	if (position > -1) {
+		var indexPos = Math.floor(Math.random()*chemistryLines.length);
+		output = chemistryLines[indexPos];
+	} else {
+		output = "unrecognized keyword";
+	}
+	$( "#output" ).text(output);
+}
+
+
+</script>
+
+
+</html>

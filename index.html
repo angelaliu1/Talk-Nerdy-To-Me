@@ -3,39 +3,36 @@
 
 <head>
 	<title>Talk Nerdy To Me</title>
-	<script
-	  src="http://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
 </head>
 
 <body>
-	<h1>Talk Nerdy To Me</h1>
-	<h3>An intellectual pick-up line generator</h3>
-	<input id="inputBox">
-	<button onclick="clickHandler()"; style="width=auto; height=auto; border-color:#ccc">Generate Pickup Line</button>
-	<span id="output"></span>
+	<div class="center">
+		<h1 class="center">Talk Nerdy To Me</h1>
+		<h3 class="center">Hot pickup lines for (questionably) hot people</h3>
+		<button class="btn center" id="random" onclick="clickHandler()">Random Pickup Line</button>
+		<button class="btn center" id="deluxe" onclick="randomLoad()">Deluxe Pickup Line</button>
+	</div>
+	<div class="center" style="margin-top: 20px;">
+		<span id="output" style="font-size: 24px;"></span>
+	</div>
+	
+	<div id="harveydiv"><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14089183_10154535060292835_4527071285550662378_n.jpg?oh=479a2127a95c53bd39396bf331d25a21&oe=59213D6D" alt="<3" id="harvey">
+</div>
+
+	<div id="gifdiv">
+		<img src="/img/harvey.gif" alt="harvey" id="gif">
+	</div>
+
+	
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="function.js"></script>
+	
+
 </body>
-
-<script>
-var chemistryKey = "chemistry";
-var chemistryLines = ['I wish I was an Ion so I could form an exothermic bond with you.',
-'Are you made of copper? Cause I Cu in a relationship with me.', 
-'Do you have 11 protons? \'Cause you\'re Sodium fine!', 'Are you full of Beryllium, Gold, and Titanium, because you are Be-Au-Ti-Ful', 'Are you a carbon sample? Because I want to date you.', 'You’re like an exothermic reaction, you spread your hotness everywhere!'];
-
-function clickHandler() {
-	var inputTxt = $( "#inputBox" ).val();
-	var position = inputTxt.indexOf(chemistryKey)
-	var output = '';
-	if (position > -1) {
-		var indexPos = Math.floor(Math.random()*chemistryLines.length);
-		output = chemistryLines[indexPos];
-	} else {
-		output = "unrecognized keyword";
-	}
-	$( "#output" ).text(output);
-}
-</script>
-
 
 </html>
