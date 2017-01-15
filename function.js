@@ -79,17 +79,17 @@ $('#random').on('click', function() {
 });
 
 function clickHandler() {
-	var indexPos = Math.floor(Math.random()*lines.length);
-	var output = lines[indexPos];
-	$( "#output" ).text(output);
+    var indexPos = Math.floor(Math.random()*lines.length);
+    var output = lines[indexPos];
+    $( "#output" ).text(output);
 };
 
 
 function randomLoad()
 {
-    var rand = new Array('1sodium.html','1bedspring.html','1driving.html','1google.html','1sun.html','1typing.html','1vacuum.html','1wright.html', '1lego.html','1number.html', '1commonsense.html','1cavity.html', '1cat.html','1jim.html', '1tangent.html',
-    '1firefox.html', '1think.html', '1leap.html', '1stranger.html', '1cucumber.html', '1astro.html', '1kiss.html', '1chairman.html', '1fall.html');
+    var rand = new Array('1sodium.html','1bedspring.html','1driving.html','1google.html','1sun.html','1typing.html','1vacuum.html','1wright.html', '1lego.html','1number.html', '1commonsense.html','1cavity.html', '1cat.html','1jim.html', '1tangent.html', '1firefox.html', '1think.html', '1leap.html', '1stranger.html', '1cucumber.html', '1astro.html', '1kiss.html', '1chairman.html', '1fall.html');
     var mynum = Math.floor(Math.random() * 24);
+
     var location = window.location;
 
     if (location == rand[mynum])
