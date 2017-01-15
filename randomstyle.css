@@ -1,0 +1,108 @@
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+	input {
+		padding: 10px;
+		border-radius: 4px;
+	}
+	
+	p {
+		font-size: 20px;
+	}
+	
+	onclick {
+		font-weight: bold;
+	}
+		
+	body
+	{
+		color: white;
+		min-width: 1200px;
+		line-height: 2.25em;
+		min-height: 100%;
+		font-family: 'Titillium Web', sans-serif;
+		position: fixed;
+    	top: 20%;
+    	width: 100%;
+	}
+
+	h1
+	{
+		color: white;
+		font-weight: 500;
+		font-size: 40px;
+		font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+		left: 0;
+    	line-height: 100px;
+    	margin: auto;
+    	margin-top: -138px;
+	}
+	
+	img
+	{
+	    margin-top: -10px;
+	}
+	
+	h3 {
+		font-size: 30px;	
+		margin-top: 15px;
+		font-stretch: ultra-expanded;
+
+	}
+	
+    html 
+    { 
+    background: 
+        /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+        
+        url("http://media.gettyimages.com/videos/abstract-electronic-circuits-loop-black-and-white-version-video-id114143852?s=640x640") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+   
+    
+    p {
+		font-family: 'Titillium Web', sans-serif;
+    }
+    
+    random {
+		padding: 60px;
+	}
+    
+    button {
+    	font-size: 20px;
+    	font-family: 'Titillium Web', sans-serif;
+    	background-color: #4CAF50; /* Green */
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	}
+	
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+a:active {
+	color: white;
+	text-decoration: none;
+}
